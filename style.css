@@ -133,6 +133,10 @@ body {
   fill: hsl(345, 95%, 68%);
 }
 
+.hidden{
+  display: none;
+}
+
 @media screen and (max-width: 425px){
   .heading{
     font-size: .5rem;
