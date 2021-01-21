@@ -48,8 +48,9 @@ body {
   display: flex;
   color: hsl(0, 0%, 100%);
   font-size: 1.4rem;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: -3rem;
+  width: 100%;
 }
 
 .card{
@@ -57,7 +58,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 12rem;
+    width: 8%;
 }
 
 .timer-box {
@@ -130,4 +131,25 @@ body {
 
 .link:hover svg path{
   fill: hsl(345, 95%, 68%);
+}
+
+@media screen and (max-width: 425px){
+  .heading{
+    font-size: .5rem;
+  }
+
+  .card{
+    width: 100%;
+  }
+
+  .timer-box {
+  font-size: 3rem;
+  padding: 1rem;
+  border-bottom: 6px solid hsl(234, 17%, 12%);
+  width: 70%;
+}
+
+.card:not(:last-child) {
+  margin-right: 0;
+}
 }
